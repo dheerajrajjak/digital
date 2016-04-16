@@ -1,9 +1,1 @@
-
-db.sqlite3
-digitalmarket/__init__.pyc
-digitalmarket/settings.pyc
-digitalmarket/urls.pyc
-digitalmarket/wsgi.pyc
-products/
-static/
-templates/
+*.pyc

@@ -1,0 +1,21 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href= "{% static 'css/base.css' %}"/>
+
+<style>
+	
+{% block style %} {% endblock %}	
+</style>
+</head>
+<body>
+{% block content %}
+
+<h2>This is Awsm !</h2>
+{% endblock content %}
+
+</body>
+</html>
