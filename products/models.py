@@ -44,16 +44,16 @@ class Product(models.Model):
 		
 
 
-def pre_save_signal(sender,instance,*args,**kwargs):
-	if instance.slug == None:
-		instance.slug= slugify(instance.title)
-	print instance.slug
-#	if  instance.slug != instance.title:
+# def pre_save_signal(sender,instance,*args,**kwargs):
+# 	if instance.slug == None:
+# 		instance.slug= slugify(instance.title)
+# 	print instance.slug
+# #	if  instance.slug != instance.title:
 		
 	
 
 
-pre_save.connect(pre_save_signal, sender= Product)	
+# pre_save.connect(pre_save_signal, sender= Product)	
 
 
 class Thumbnail(models.Model):
@@ -67,5 +67,5 @@ class Thumbnail(models.Model):
 	def __unicode__(self):
 		return str(self.image.path)
 
-		
+
 
